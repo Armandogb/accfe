@@ -15,6 +15,17 @@
 	width:100%;
 }
 
+.logo{
+	background: url(../images/logo.png);
+}
+
 .nav-bar{
-	width:100%;
+	width:80%;
+}
+
+.nav-bar li{
+	display: block;
+	float: left;
+	line-height: 14px;
+	padding:0 5% 0 0;
 }
