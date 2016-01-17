@@ -1,6 +1,7 @@
 
 .contact-bar{
 	float: right;
+	background: yellow;
 }
 
 .contact-bar li{
@@ -14,7 +15,9 @@
 .logo-bar{
 	overflow: hidden;
 	background-color: white;
-	padding-top:.25%;
+	padding:.25% 25% 0 25%;
+	width:50%;
+	height:118px;
 }
 
 .logo{
@@ -23,7 +26,8 @@
  	 -moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-	height:184px;
+	height:100%;
+	min-width:656px;
 	width:100%;
 }
 
@@ -42,6 +46,7 @@
 	display: inline-block;
 	float: right;
 	color: white;
+	padding:2% 0 0 0;
 }
 
 .search input{
@@ -58,4 +63,5 @@
 
 .nav-bar li a{
 	color:white;
+	font-size: 14px;
 }

@@ -35,8 +35,9 @@ footer div{
 	float:right;
 	display: inline-block;
 	width:33%;
-	background: yellow;
+	padding:0;
 }
+
 
 .footer-nav{
 	float:left;
@@ -60,5 +61,9 @@ footer div{
 .bot-nav li{
 	float:right;
 	padding-left: 1%;
+}
+
+.spring-office-head{
+	text-align: right;
 }
 
