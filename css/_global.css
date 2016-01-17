@@ -1,0 +1,45 @@
+
+html,body{
+	height:100%;
+	width:100%;
+	padding:0;
+	margin:0;
+	overflow: hidden;
+	background:green;
+}
+
+section,header,footer{
+	position: relative;
+	display: inline-block;
+	float:left;
+
+}
+
+li{
+	list-style: none;
+}
+
+.main-container{
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	overflow: hidden;
+}
+
+.main-pad{
+	padding-left:20%;
+	padding-right:20%;
+	width:60%;
+}
+
+
+
+
+
+
+
+
+
+
+

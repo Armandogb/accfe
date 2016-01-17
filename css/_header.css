@@ -1,0 +1,20 @@
+.contact-bar{
+	float: right;
+	width:100%;
+}
+
+.contact-bar li{
+	display: block;
+	line-height: 16px;
+	padding:0 0 0 5%;
+	float: right;
+
+}
+
+.logo-bar{
+	width:100%;
+}
+
+.nav-bar{
+	width:100%;
+}

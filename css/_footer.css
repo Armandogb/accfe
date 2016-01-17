@@ -1,0 +1,37 @@
+.foot-nav-header{
+	display: inline-block;
+	width:100%;
+	clear:both;
+}
+
+.foot-nav-header div{
+	float:right;
+	display: inline-block;
+	width:33%;
+	background: yellow;
+}
+
+.footer-nav{
+	float:left;
+	width:33%;
+}
+.main-office{
+	float:left;
+	width:33%;
+}
+.spring-office{
+	float:left;
+	width:33%;
+}
+
+.bot-nav{
+	display: inline-block;
+	width:100%;
+	clear:both;
+}
+
+.bot-nav li{
+	float:right;
+	padding-left: 1%;
+}
+
