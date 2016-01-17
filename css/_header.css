@@ -1,6 +1,6 @@
+
 .contact-bar{
 	float: right;
-	width:100%;
 }
 
 .contact-bar li{
@@ -12,20 +12,50 @@
 }
 
 .logo-bar{
-	width:100%;
+	overflow: hidden;
+	background-color: white;
+	padding-top:.25%;
 }
 
 .logo{
-	background: url(../images/logo.png);
+	 background: url(../images/logo.png) no-repeat center center; 
+  	-webkit-background-size: cover;
+ 	 -moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	height:184px;
+	width:100%;
 }
 
 .nav-bar{
-	width:80%;
+	 background-color: rgb(15, 148, 72);
+	 overflow: hidden;
+}
+
+.nav-bar ul{
+	display: inline-block;
+	 width:70%;
+	 float: left;
+}
+
+.search{
+	display: inline-block;
+	float: right;
+	color: white;
+}
+
+.search input{
+	background: transparent;
+	border: none;
+	border-bottom:1px white solid;
 }
 
 .nav-bar li{
 	display: block;
 	float: left;
-	line-height: 14px;
 	padding:0 5% 0 0;
+}
+
+.nav-bar li a{
+	color:white;
 }
