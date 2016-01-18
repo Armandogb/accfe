@@ -2,13 +2,21 @@
 .contact-bar{
 	float: right;
 	background: #F5F5F1;
+	padding-top: 1.5%;
+	padding-bottom:1.5%;
 }
 
 .contact-bar li{
 	display: block;
-	line-height: 16px;
+	line-height: 10px;
+	font-size: 12px;
 	padding:0 0 0 5%;
 	float: right;
+
+}
+
+.contact-bar strong{
+	font-size: 24px;
 
 }
 
@@ -34,6 +42,7 @@
 .nav-bar{
 	 background-color: rgb(15, 148, 72);
 	 overflow: hidden;
+	 padding-top:0;
 }
 
 .nav-bar ul{
@@ -53,16 +62,23 @@
 .search input{
 	background: transparent;
 	border: none;
+	height:30px;
 	border-bottom:1px white solid;
 }
 
 .nav-bar li{
 	display: block;
 	float: left;
-	padding:0 5% 0 0;
+	padding:5% 4% 5% 4%;
+	text-align: center;
+}
+
+.nav-bar li:first-child{
+	background: #50b341;
 }
 
 .nav-bar li a{
 	color:white;
-	font-size: 14px;
+	font-size: 15px;
+	line-height: 0;
 }

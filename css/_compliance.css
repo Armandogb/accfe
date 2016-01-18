@@ -1,0 +1,36 @@
+
+.spread-banner{
+	height:200px;
+	position: relative;
+	background: #097331;
+}
+.banner-shape{
+    position: absolute;
+    width: 25%;
+    top: 0;
+    right: 5%;
+    height: 100%;
+    -webkit-transform: skew(-40deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    background: #0F9448;
+    z-index: 0;
+}
+
+.blurb{
+	width:80%;
+}
+
+.banner.blurb{
+    position: relative;
+    z-index: 2;
+    float: left;
+    color: white;
+}
+
+.page-text{
+	background: white;
+}
+
+.blurb.con{
+}

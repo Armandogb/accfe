@@ -5,5 +5,6 @@
 
 @import "_header.css";
 @import "_footer.css";
-@import "_index.css";
 
+@import "_index.css";
+@import "_compliance.css";

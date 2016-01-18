@@ -1,53 +1,18 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-	</head>
-
-	<body>
-		<section class="main-container">
-			<header>
-				<div class="contact-bar main-pad">
-					<ul>
-						<li><strong>800-942-7124</strong></li>
-						<li>CONTACT US</li>
-						<li>LOG IN</li>
-					</ul>
-				</div>
-				<div class="logo-bar">
-					<div class="logo">
-					</div>
-				</div>
-				<div class="nav-bar main-pad">
-					<ul>
-						<li><a href="/compliance.html">COMPLIANCE</a></li>
-						<li><a href="/services.html">SERVICES</a></li>
-						<li><a href="/resources.html">RESOURCES</a></li>
-						<li><a href="/about-us.html">ABOUT US</a></li>	
-					</ul>
-					<div class="search">
-						<input placeholder="Search">
-						<i class="fa fa-search"></i>
-					</div>
-				</div>
-			</header>
 
 			<footer class="main-pad">
-				<!-- <img class="foot-logo" src="images/A-accomplus.png"> -->
 				<div class="foot-logo">
 				</div>
 				<div class="foot-nav-header">
 					<div class="spring-office-head">
-						<p><strong><i class="fa fa-map-marker"></i>  Springfield Legislative Office</strong></p>
+					
 					</div>
 					<div class="main-office-head">
-						<p><strong><i class="fa fa-map-marker"></i>  Main Office</strong></p>
+						
 					</div>
 				</div>
 				<div class="footer-nav">
 					<ul>
+						<li><span style="visibility: hidden;">-</span></li>
 						<li>MEMBER ACCOUNTS</li>
 						<li>STRATEGIC OPERATIONS</li>
 						<li>TACTICAL OPERATIONS</li>
@@ -59,6 +24,7 @@
 				</div>
 				<div class="main-office">
 					<ul>
+						<li><span><i class="fa fa-map-marker"></i>  Main Office</span></li>
 						<li>1807 West Diehl Road</li>
 						<li>P.O. Box 3107</li>
 						<li>Naperville,IL 6056-7107</li>
@@ -69,6 +35,7 @@
 				</div>
 				<div class="spring-office">
 					<ul>
+						<li><span><i class="fa fa-map-marker"></i>  Springfield Legislative Office</span></li>
 						<li>255 S. College</li>
 						<li>Suite 200</li>
 						<li>Springfield, IL 62704</li>

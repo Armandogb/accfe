@@ -1,9 +1,11 @@
 
 .main-mission{
 	background: white;
+	padding-top:4%; 
+	padding-bottom:4%;
 }
 .main-slider{
-	width:100%	;
+	width:100%;
 }
 
 .caro{
@@ -28,42 +30,97 @@
 	float: left;
 }
 
+.mission-blurb p{
+	font-size: 20px;
+	line-height: 1.5;
+}
+
 .mission-menu{
 	width: 25%;
 	float: right;
 	display: inline-block;
-	height:100px;
+	height:100%;
 	background: red;
 }
 
 .services{
 	background: #F5F5F1;
-	width: 60%;
-	padding:3% 20% 3% 20%;
+	width: 64%;
+	padding:3% 18% 3% 18%;
 	height:200px;
 }
 
 .big-service{
 	float:left;
+	position: relative;
 	display: inline-block;
 	border:1px grey solid;
 	width:21%;
-	padding:0 5% 0 5%;
+	padding:1.5% 5% 0 5%;
 	margin-right: 2%;
 	height:100%;
-	background: red;
+	color: #9EA2A4;
+	background: #F5F5F1;
 	text-align: center;
 }
 
+.big-service .icon{
+    background-color:#F5F5F1;
+    color: #9EA2A4;
+    position: absolute;
+    color:red;
+    width: 30%;
+    font-size: 50px;
+    top: -15%;
+    left: 35%;
+}
+
+.small-service .icon{
+	background-color: #F5F5F1;
+    position: absolute;
+    width: 55%;
+    font-size: 16px;
+    line-height: 0px;
+    top: -17%;
+    left: 19.5%;
+    padding-left:2%;
+    text-align: center;
+}
+
 .small-service{
+	position:relative;
 	float:right;
 	display: inline-block;
 	border:1px grey solid;
 	width:33%;
 	height:46%;
-	background: red;
+	padding-top: .5%;
+	color: #9EA2A4;
+	background: #F5F5F1;
+	text-align: center;	
+}
+
+.small-service ul{
+	padding-top: 4%;
+}
+
+.small-service li{
+	padding-top: 1.5%;
+}
+
+
+.services a,.main-mission a{
+	color: #9EA2A4;
+	padding-bottom: 1%;
+	border-bottom: 2px solid #aed139;	
 }
 
 .small-service.bot{
 	margin-top: 2%;
+}
+
+.small-service.bot .icon{
+    width: 50%;
+    padding-left:2%;
+    left: 22.5%;
 }
