@@ -38,8 +38,9 @@
 
 .nav-bar ul{
 	display: inline-block;
-	 width:70%;
-	 float: left;
+	width:70%;
+	float: left;
+	padding:0;
 }
 
 .search{
