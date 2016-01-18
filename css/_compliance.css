@@ -34,3 +34,20 @@
 
 .blurb.con{
 }
+
+.box-section{
+	background: white;
+	padding-top:5%; 
+	padding-bottom:5%;
+}
+
+.link-box{
+	display: inline-block;
+	width:30%;
+	height:50px;
+	margin-right: 2%;
+	border-top:10px solid #aed139;
+	border-bottom:10px solid rgb(15, 148, 72); 
+	border-left:1px solid #9EA2A4;
+	border-right:1px solid #9EA2A4;
+}
