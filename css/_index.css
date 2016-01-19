@@ -12,6 +12,26 @@
 	height:400px;
 }
 
+.caro ul{
+	width:100%;
+	position: relative;
+	height:100%;
+	overflow: hidden;
+}
+
+.caro li{
+	display: inline-block;  
+    border: 1px solid #ccc;  
+    overflow: hidden;  
+    width: 100%;    
+    float: left;  
+    -moz-box-sizing: border-box;  
+    -webkit-box-sizing: border-box;  
+    box-sizing: border-box;
+    height:100%;  
+
+}
+
 .news-update{
 	background: #F5F5F1;
 	padding-top: 1%;

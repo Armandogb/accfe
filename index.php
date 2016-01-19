@@ -3,18 +3,18 @@
 
 		<section class="main-slider">
 				<div class="caro">
-					<div class="slide-1">
-						
-					</div>
-					<div class="slide-2">
-						
-					</div>
-					<div class="slide-3">
-						
-					</div>
-					<div class="slide-4">
-						
-					</div>
+					    <ul>  
+       						<li>YES 1</li>  
+        					<li>YES 2</li>  
+        					<li>YES 3</li>  
+        					<li>YES 4</li>   
+   					 	</ul> 
+   					 	<div class="foward-but">
+   					 		<a href="/"></a>
+   					 	</div>
+   					 	<div class="back-but">
+   					 		<a href="/"></a>
+   					 	</div>
 				</div>
 				<div class="news-update main-pad">
 					<p></p>
