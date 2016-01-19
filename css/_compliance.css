@@ -1,18 +1,19 @@
 
 .spread-banner{
-	height:200px;
 	position: relative;
 	background: #097331;
+	overflow: hidden;
+	padding-bottom: 2%;
 }
 .banner-shape{
     position: absolute;
-    width: 25%;
+    width: 15%;
     top: 0;
-    right: 5%;
+    right: 14%;
     height: 100%;
     -webkit-transform: skew(-40deg);
-    -moz-transform: skew(-20deg);
-    -o-transform: skew(-20deg);
+    -moz-transform: skew(-40deg);
+    -o-transform: skew(-40deg);
     background: #0F9448;
     z-index: 0;
 }
@@ -25,7 +26,20 @@
     position: relative;
     z-index: 2;
     float: left;
-    color: white;
+
+}
+
+.banner.blurb h1{
+	font-size: 50px;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.banner.blurb p{
+	font-size: 18px;
+    color: #f5f5f1;
+    font-weight: 300;
 }
 
 
@@ -57,11 +71,50 @@
 
 .link-box{
 	display: inline-block;
-	width:30%;
-	height:50px;
+	position: relative;
+	vertical-align: top;
+	padding:0 2% 0 2%;
+	width:26%;
+	min-height: 220px;
 	margin-right: 2%;
+	margin-bottom:4%;
 	border-top:10px solid #aed139;
 	border-bottom:10px solid rgb(15, 148, 72); 
 	border-left:1px solid #9EA2A4;
 	border-right:1px solid #9EA2A4;
+	text-align: center;
 }
+
+.link-box h3{
+	display: block;
+    font-size: 24px;
+    line-height: 1;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    color: #4d4f4f;
+}
+
+.link-box p{
+	display: block;
+    color: #797c7d;
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1.33;
+}
+
+.link-box a{
+	display: block;
+	position: absolute;
+	padding-bottom: 10%;
+	bottom: 0;
+	left:35%;
+	font-size: 14px;
+    line-height: 1;
+    color: #4d4f4f;
+    font-family: 'Vollkorn',serif;
+    display: block;
+}
+
+
+
+
+

@@ -1,0 +1,70 @@
+.management-collect{
+	background: white;
+	padding-bottom: 5%;
+}
+
+.leader-profile{
+	border-bottom:10px solid #aed139;
+	width:100%;
+	padding-top:5%;
+	height:268px;
+	overflow: hidden;
+}
+
+.leader-image-con{
+	height:100%;
+	width:25%;
+	float: left;
+	position: relative;
+}
+
+.leader-image{
+	background: url(../images/boss.jpg) no-repeat center center; 
+  	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	height:100%;
+	width:100%;
+}
+
+.leader-info{
+	width:70%;
+	padding-left: 5%;
+	float: left;
+}
+
+.leader-info h3{
+	font-size: 28px;
+    line-height: 1;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    color: #4d4f4f;
+}
+
+.leader-info h4{
+    font-size: 20px;
+    line-height: 1.25;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+    color: #4d4f4f;
+    margin-top: -3.5%;
+}
+
+.leader-info p{
+    font-size: 18px;
+    line-height: 1.56;
+    font-family: 'Open Sans',sans-serif;
+    color: #797c7d;
+}
+
+.leader-info a{
+	display: inline-block;
+	color: #797c7d;
+	font-family: 'Vollkorn', serif;
+	font-size: 14px;
+	line-height: 1; 
+	padding-bottom: 1%;
+	margin-right: 3.5%;
+	border-bottom: 2px solid #aed139;	
+}
