@@ -4,16 +4,16 @@
 		<section class="main-slider">
 				<div class="caro">
 					    <ul>  
-       						<li id="1" class="hidden" style="display: block;">YES 1</li>  
-        					<li id="2" class="hidden">YES 2</li>  
-        					<li id="3" class="hidden">YES 3</li>  
-        					<li id="4" class="hidden">YES 4</li>   
+       						<li id="1" class="slide 1" style="display: block; background: url(../images/slide-1.png) no-repeat center center;  background-size: cover; height:400px; width:100%; opacity:1;"></li>  
+        					<li id="2" class="slide 2" style="display: none; background: url(../images/slide-2.png) no-repeat center center;  background-size: cover; height:400px; width:100%; opacity:0;"></li>  
+        					<li id="3" class="slide 3" style="display: none; background: url(../images/slide-3.png) no-repeat center center;  background-size: cover; height:400px; width:100%; opacity:0;"></li>  
+        					<li id="4" class="slide 4" style="display: none; background: url(../images/slide-4.png) no-repeat center center;  background-size: cover; height:400px; width:100%; opacity:0;"></li>   
    					 	</ul> 
-   					 	<div class="foward-but">
-   					 		<a href="/"></a>
+   					 	<div class="forward-but">
+   					 		<i class="fa fa-chevron-right"></i>
    					 	</div>
    					 	<div class="back-but">
-   					 		<a href="/"></a>
+   					 		<i class="fa fa-chevron-left"></i>
    					 	</div>
 				</div>
 				<div class="news-update main-pad">
