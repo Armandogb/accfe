@@ -18,7 +18,7 @@ keep up—we help you concentrate on the growth of your CU.</p>
 					As you explore the categories below, remember that you can contact us anytime if you can’t find what you’re looking for.</p>
 				</div>
 			</section>
-			<section class="box-section main-pad">
+			<section class="box-section">
 				<div class="link-box">
 					
 				</div>

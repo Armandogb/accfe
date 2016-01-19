@@ -2,16 +2,17 @@
 .contact-bar{
 	float: right;
 	background: #F5F5F1;
-	padding-top: 1.5%;
-	padding-bottom:1.5%;
+	padding-top: 1%;
+	padding-bottom:1%;
 }
 
 .contact-bar li{
 	display: block;
 	line-height: 10px;
 	font-size: 12px;
-	padding:0 0 0 5%;
+	padding:0 0 0 4%;
 	float: right;
+	font-weight: 300;
 
 }
 
@@ -56,7 +57,7 @@
 	display: inline-block;
 	float: right;
 	color: white;
-	padding:2% 0 0 0;
+	padding:1% 0 0 0;
 }
 
 .search input{
@@ -69,7 +70,7 @@
 .nav-bar li{
 	display: block;
 	float: left;
-	padding:5% 4% 5% 4%;
+	padding:2% 4% 2% 4%;
 	text-align: center;
 }
 

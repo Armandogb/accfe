@@ -5,7 +5,14 @@ html,body{
 	padding:0;
 	margin:0;
 	background:red;
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
 }
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 
 section,header,footer{
 	position: relative;

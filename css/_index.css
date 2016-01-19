@@ -1,7 +1,6 @@
 
 .main-mission{
-	background: white;
-	padding-top:4%; 
+	background: white; 
 	padding-bottom:4%;
 }
 .main-slider{
@@ -32,8 +31,20 @@
 
 .mission-blurb p{
 	font-size: 20px;
-	line-height: 1.5;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #797c7d;
+    line-height: 1.5;
 }
+
+.mission-blurb h2{
+	font-size: 40px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    color: #4d4f4f;
+}
+
 
 .mission-menu{
 	width: 25%;
@@ -47,26 +58,40 @@
 	background: #F5F5F1;
 	width: 64%;
 	padding:3% 18% 3% 18%;
-	height:200px;
 }
 
 .big-service{
 	float:left;
 	position: relative;
 	display: inline-block;
-	border:1px grey solid;
+	border:1px #797c7d solid;
 	width:21%;
-	padding:1.5% 5% 0 5%;
+	padding:3.5% 5% 3.5% 5%;
 	margin-right: 2%;
-	height:100%;
-	color: #9EA2A4;
+	height:200px;
+	color: #797c7d;
 	background: #F5F5F1;
 	text-align: center;
 }
 
+.big-service p{
+	line-height: 1.67;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+
+}
+
+.big-service h3{
+    font-size: 24px;
+    line-height: 1;
+    color: #4d4f4f;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+}
+
 .big-service .icon{
     background-color:#F5F5F1;
-    color: #9EA2A4;
+    color: #797c7d;
     position: absolute;
     color:red;
     width: 30%;
@@ -76,32 +101,33 @@
 }
 
 .small-service .icon{
-	background-color: #F5F5F1;
+    background-color: #F5F5F1;
     position: absolute;
-    width: 55%;
+    width: 50%;
     font-size: 16px;
     line-height: 0px;
-    top: -17%;
-    left: 19.5%;
-    padding-left:2%;
+    top: -14%;
+    left: 25%;
     text-align: center;
 }
 
 .small-service{
-	position:relative;
-	float:right;
-	display: inline-block;
-	border:1px grey solid;
-	width:33%;
-	height:46%;
-	padding-top: .5%;
-	color: #9EA2A4;
-	background: #F5F5F1;
-	text-align: center;	
+	position: relative;
+    float: right;
+    display: inline-block;
+    border: 1px #797c7d solid;
+    width: 33%;
+    height: 103px;
+    padding-top: 2%;
+    background: #F5F5F1;
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15px;
+    line-height: 1.67;
+    color: #797c7d;	
 }
 
 .small-service ul{
-	padding-top: 4%;
 }
 
 .small-service li{
@@ -110,7 +136,10 @@
 
 
 .services a,.main-mission a{
-	color: #9EA2A4;
+	color: #797c7d;
+	font-family: 'Vollkorn', serif;
+	font-size: 14px;
+	line-height: 1; 
 	padding-bottom: 1%;
 	border-bottom: 2px solid #aed139;	
 }
@@ -120,7 +149,6 @@
 }
 
 .small-service.bot .icon{
-    width: 50%;
-    padding-left:2%;
-    left: 22.5%;
+	width: 45%;
+    left: 27.5%;
 }

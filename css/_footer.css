@@ -2,12 +2,11 @@ footer{
 	background:#4D4F4F;
 	overflow: hidden;
 	color: #9EA2A4;
-	font-family: times;
 	font-size: 14px;
 }
 
 footer li{
-	padding-top:3.5%;
+	padding-top:1.5%;
 }
 
 footer i{
