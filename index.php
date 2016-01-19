@@ -4,10 +4,10 @@
 		<section class="main-slider">
 				<div class="caro">
 					    <ul>  
-       						<li>YES 1</li>  
-        					<li>YES 2</li>  
-        					<li>YES 3</li>  
-        					<li>YES 4</li>   
+       						<li id="1" class="hidden" style="display: block;">YES 1</li>  
+        					<li id="2" class="hidden">YES 2</li>  
+        					<li id="3" class="hidden">YES 3</li>  
+        					<li id="4" class="hidden">YES 4</li>   
    					 	</ul> 
    					 	<div class="foward-but">
    					 		<a href="/"></a>
