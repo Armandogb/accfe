@@ -26,6 +26,7 @@
 					private $headers=[];
 					private $id_holder =[];
 					private $final=[];
+					private $origin_id = 'field_569ff22904fca';
 
 
 					function __construct($url){
@@ -65,39 +66,76 @@
 
 					function fill_pages($array){
 
-						$origin_id = 'field_569fb579aaf7c';
-
-				/*		$args = array(
-							'post_type'        => 'api_page',
-							'post_status'      => 'publish'						
-							);
-
-						$query = get_posts($args);
-
-						foreach($query as $entry){
-							array_push($this->id_holder, the_field( $origin_id,$entry['ID'] ));
-						}*/
-
 						foreach($array as $arr){
-							$post = array(
+							
+							$n_post = array(
 							  'post_content'   => file_get_contents(str_replace('https://', 'http://', $arr['APILink'])),
 							  'post_title'     => $arr['PageName'],
-							  'post_type'        => 'api_page',
-							  'post_status'    => 'publish' 
+							  'post_type'        => 'page',
+							  'post_status'    => 'publish',
+							  'page_template'  => 'template-api-object.php' 
 							);
 
-							$mode = /*in_array($arr['ID'], $this->id_holder) ?*/ wp_insert_post($post)/* : wp_update_post($post)*/;
+							$mode = wp_insert_post($n_post);
 
-							update_field($origin_id, $arr['ID'], $mode); 
+							update_field($this->origin_id, $arr['ID'], $mode);
 						}
-
 
 					}
 
+					function update_pages($array){
+
+						$args = array(
+							'post_type'        => 'page',
+							'post_status'      => 'publish',
+							'number'		   =>	10000					
+						);
+
+						$query = get_pages($args);
+
+						foreach($query as $entry){
+							$this->id_holder[the_field( $origin_id,$entry->ID )] = $entry->ID;
+						}
+					
+						$keys = array_keys($this->id_holder);
+
+						print_r($keys);
+						echo"----------";
+
+
+						/*foreach($array as $arr){
+								
+								$u_post = array(
+									'ID'		=> $this->id_holder[$arr['ID']],
+								  'post_content'   => file_get_contents(str_replace('https://', 'http://', $arr['APILink'])),
+								  'post_title'     => $arr['PageName'],
+								  'post_type'        => 'page',
+								  'post_status'    => 'publish',
+								  'page_template'  => 'template-api-object.php' 
+								);
+
+								$mode = wp_update_post($u_post);
+
+								update_field($origin_id, $arr['ID'], $mode);
+						}	*/
+					}
+
+
 					function run_it($e){
+
 						self::get_data($e);
 						self::key_data($this->parsed_data);
-						self::fill_pages($this->final);
+
+						if (isset($_POST['populate'])){
+
+							self::fill_pages(array_filter($this->final));
+
+						}elseif (isset($_POST['update'])){
+							/*self::update_pages(array_filter($this->final));*/
+
+						}
+
+						header("Location: /wp-admin/admin.php?page=agb_api&m=Your%20posts%20have%20been%20created!");
 					}
 
 
@@ -149,6 +187,9 @@
 			?>
 
 				<div class="wrap">
+					<div>
+						<h1 style="color:green;"><?php echo $_GET['m'];?></h1>
+					</div>
 					<h1><?php echo self::name ?> Settings</h1>
 					<form method="post" action="options.php">
 					<?php settings_fields( self::slug."_settings" ); ?>
@@ -163,7 +204,13 @@
 					</form>
 					<form method="post" action="<?=$_SERVER['PHP_SELF'];?>">
 						<input type="hidden" name="xxx" value="<?php echo esc_attr(get_option(self::slug.'_endpoint')) ?>">
+						<input type="hidden" name="populate" value="yes">
 						<input style="width:110px; height:50px; color:white; background:red; border-radius:5px;"type="submit" name="go" value="Populate" />
+					</form>
+					<form method="post" action="<?=$_SERVER['PHP_SELF'];?>">
+						<input type="hidden" name="xxx" value="<?php echo esc_attr(get_option(self::slug.'_endpoint')) ?>">
+						<input type="hidden" name="update" value="yes">
+						<input style="width:110px; height:50px; color:white; background:purple; border-radius:5px;"type="submit" name="up" value="update" />
 						<h3>(This may take a few minutes)</h3>
 					</form>
 				</div>
