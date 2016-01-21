@@ -74,8 +74,9 @@
 							  'post_content'   => $content->{'Content'},
 							  'post_title'     => $arr['PageName'],
 							  'post_type'        => 'page',
+							  'post_category' => ['API'],
 							  'post_status'    => 'publish',
-							  'page_template'  => 'template-api-object.php' 
+							  'page_template'  => 'template_api_object.php' 
 							);
 
 							$mode = wp_insert_post($n_post);
@@ -108,8 +109,7 @@
 								  'post_content'   => /*$content->{'Content'}*/ "Updated",
 								  'post_title'     => $arr['PageName'],
 								  'post_type'        => 'page',
-								  'post_status'    => 'publish',
-								  'page_template'  => 'template-api-object.php' 
+								  'post_status'    => 'publish'
 								);
 
 								wp_update_post($u_post);
