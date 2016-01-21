@@ -9,17 +9,18 @@ use Roots\Sage\Wrapper;
 <html <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
   <body <?php body_class(); ?> role="document">
-   
-    <?php
-      do_action('get_header');
-      get_template_part('templates/header');
-    ?>
-          <?php include Wrapper\template_path(); ?>
-       
-    <?php
-      do_action('get_footer');
-      get_template_part('templates/footer');
-      wp_footer();
-    ?>
+      <section class="main-container">
+        <?php
+          do_action('get_header');
+          get_template_part('templates/header');
+        ?>
+              <?php include Wrapper\template_path(); ?>
+           
+        <?php
+          do_action('get_footer');
+          get_template_part('templates/footer');
+          wp_footer();
+        ?>
+      </section>
   </body>
 </html>

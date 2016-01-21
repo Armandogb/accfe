@@ -33,7 +33,7 @@
 				<div class="mission-menu">
 				</div>
 			</section>
-			<section class="services">
+			<section class="services-sec">
 				<div class="big-service">
 					<div class="icon">
 						<i class="fa fa-book"></i>

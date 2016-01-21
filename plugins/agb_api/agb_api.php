@@ -68,8 +68,10 @@
 
 						foreach($array as $arr){
 							
+							$content = json_decode(file_get_contents(str_replace('https://', 'http://', $arr['APILink'])));
+							
 							$n_post = array(
-							  'post_content'   => file_get_contents(str_replace('https://', 'http://', $arr['APILink'])),
+							  'post_content'   => $content->{'Content'},
 							  'post_title'     => $arr['PageName'],
 							  'post_type'        => 'page',
 							  'post_status'    => 'publish',
@@ -99,9 +101,11 @@
 
 						foreach($array as $arr){
 								
+								$content = json_decode(file_get_contents(str_replace('https://', 'http://', $arr['APILink'])));
+								
 								$u_post = array(
 									'ID'		=> $this->id_holder[$arr['ID']],
-								  'post_content'   => /*file_get_contents(str_replace('https://', 'http://', $arr['APILink']))*/"Updated",
+								  'post_content'   => /*$content->{'Content'}*/ "Updated",
 								  'post_title'     => $arr['PageName'],
 								  'post_type'        => 'page',
 								  'post_status'    => 'publish',

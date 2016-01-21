@@ -55,6 +55,4 @@
 					</ul>
 				</div>
 			</footer>
-		</section>
-	</body>
-</html>
+
