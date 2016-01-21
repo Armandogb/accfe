@@ -26,7 +26,7 @@
 					private $headers=[];
 					private $id_holder =[];
 					private $final=[];
-					private $origin_id = 'field_569ff22904fca';
+					private $origin_id = 'field_56a02a3519c25';
 
 
 					function __construct($url){
@@ -55,11 +55,11 @@
 					function key_data($array){
 
 						foreach($array as $arr){
-
-							$copy = $this->headers[0];
-							$result = array_combine($copy, $arr);
-							array_push($this->final, $result);
-
+							if(count($arr) > 3){
+								$copy = $this->headers[0];
+								$result = array_combine($copy, $arr);
+								array_push($this->final, $result);
+							}
 						}
 
 					}
@@ -88,36 +88,28 @@
 						$args = array(
 							'post_type'        => 'page',
 							'post_status'      => 'publish',
-							'number'		   =>	10000					
+							'number'		   =>	100000					
 						);
 
 						$query = get_pages($args);
 
 						foreach($query as $entry){
-							$this->id_holder[the_field( $origin_id,$entry->ID )] = $entry->ID;
+							$this->id_holder[get_field( 'origin_id',$entry->ID )] = $entry->ID;
 						}
-					
-						$keys = array_keys($this->id_holder);
 
-						print_r($keys);
-						echo"----------";
-
-
-						/*foreach($array as $arr){
+						foreach($array as $arr){
 								
 								$u_post = array(
 									'ID'		=> $this->id_holder[$arr['ID']],
-								  'post_content'   => file_get_contents(str_replace('https://', 'http://', $arr['APILink'])),
+								  'post_content'   => /*file_get_contents(str_replace('https://', 'http://', $arr['APILink']))*/"Updated",
 								  'post_title'     => $arr['PageName'],
 								  'post_type'        => 'page',
 								  'post_status'    => 'publish',
 								  'page_template'  => 'template-api-object.php' 
 								);
 
-								$mode = wp_update_post($u_post);
-
-								update_field($origin_id, $arr['ID'], $mode);
-						}	*/
+								wp_update_post($u_post);
+						}	
 					}
 
 
@@ -131,7 +123,7 @@
 							self::fill_pages(array_filter($this->final));
 
 						}elseif (isset($_POST['update'])){
-							/*self::update_pages(array_filter($this->final));*/
+							self::update_pages(array_filter($this->final));
 
 						}
 
