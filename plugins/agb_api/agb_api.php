@@ -73,7 +73,7 @@
 							$n_post = array(
 							  'post_content'   => $content->{'Content'},
 							  'post_title'     => $arr['PageName'],
-							  'post_type'        => 'page',
+							  'post_type'        => 'api_page',
 							  'post_category' => ['API'],
 							  'post_status'    => 'publish',
 							  'page_template'  => 'template_api_object.php' 
@@ -89,7 +89,7 @@
 					function update_pages($array){
 
 						$args = array(
-							'post_type'        => 'page',
+							'post_type'        => 'api_page',
 							'post_status'      => 'publish',
 							'number'		   =>	100000					
 						);
@@ -108,7 +108,6 @@
 									'ID'		=> $this->id_holder[$arr['ID']],
 								  'post_content'   => /*$content->{'Content'}*/ "Updated",
 								  'post_title'     => $arr['PageName'],
-								  'post_type'        => 'page',
 								  'post_status'    => 'publish'
 								);
 

@@ -59,8 +59,8 @@ function api_pages() {
   $args = array(
     'label'                 => __( 'API PAGE', 'text_domain' ),
     'labels'                => $labels,
-    'supports'              => array( 'editor', ),
-    'hierarchical'          => false,
+    'supports'              => array('title','editor','page-attributes'),
+    'hierarchical'          => true,
     'public'                => true,
     'show_ui'               => true,
     'show_in_menu'          => true,
