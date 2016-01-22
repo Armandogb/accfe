@@ -15,12 +15,11 @@
 .caro ul{
 	width:100%;
 	position: relative;
-	height:100%;
 	overflow: hidden;
 	z-index: 4;
 }
 
-.caro li{
+/*.caro li{
 	display: inline-block;  
     overflow: hidden;  
     width: 100%;    
@@ -28,13 +27,12 @@
     -moz-box-sizing: border-box;  
     -webkit-box-sizing: border-box;  
     box-sizing: border-box;
-    height:400px;
     transition: opacity .25s ease-in-out;
    -moz-transition: opacity .25s ease-in-out;
    -webkit-transition: opacity .25s ease-in-out; 
 
 }
-
+*/
 .forward-but,.back-but{
 	position:absolute;
 	-webkit-text-stroke: 1px #797c7d;

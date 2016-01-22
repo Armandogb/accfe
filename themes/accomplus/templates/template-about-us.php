@@ -6,19 +6,15 @@
 
 			<section class="spread-banner main-pad">
 				<div class="banner blurb">
-					<h1>About Us</h1>
-					<p>“People helping people" is our core philosophy at Accomplus. 
-						Spanning advocacy, member services, regulatory and 
-						governmental affairs, educational development and regional 
-						management, our expertise is here to free up credit unions' 
-						operating environment.</p>
+					<h1><?php echo get_field("banner_title"); ?></h1>
+					<p><?php echo get_field("banner_blurb"); ?></p>
 				</div>
 				<div class="banner-shape">	
 				</div>
 			</section>
 			<section class="page-text main-pad">
 				<div class="blurb con">				
-					<p>Accomplus is part of the Illinois Credit Union League. It was formed to better help credit unions in Illinois and beyond stay competitive and efficient in the constantly evolving compliance environment.</p>
+					<p><?php echo get_field("blurb_content"); ?></p>
 				</div>
 			</section>
 			<section class="management-collect main-pad">

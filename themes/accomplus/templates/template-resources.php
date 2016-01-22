@@ -13,7 +13,7 @@ if( have_posts() ){
 
 	<section class="main-mission main-pad">
 			<div class="mission-blurb">
-				<?php wp_list_pages(['post_type'    => 'api_page']); ?> 
+				<?php wp_list_pages(['post_type' => 'api_page']); ?> 
 			</div>
 	</section>
 
