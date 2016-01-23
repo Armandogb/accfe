@@ -7,7 +7,7 @@
 						<li>LOG IN</li>
 					</ul>
 				</div>
-				<div class="logo-bar">
+				<div class="logo-bar main-pad">
 					<a href="/"><div class="logo">
 					</div></a>
 				</div>

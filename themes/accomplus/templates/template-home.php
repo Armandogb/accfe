@@ -7,10 +7,10 @@
 		<section class="main-slider">
 				<div class="caro">
 					    <ul>  
-       						<li id="1" class="slide 1" style="position:relative;  padding-top: 30.64%; display: block; background: url(<?php echo get_template_directory_uri() . '/dist/images/slide-1.png'; ?>) no-repeat center center;  background-size: cover; height:0; width:100%; opacity:1;"></li>  
-        					<li id="2" class="slide 2" style="position:relative;  padding-top: 30.64%; display: none; background: url(<?php echo get_template_directory_uri() . '/dist/images/slide-2.png'; ?>) no-repeat center center;  background-size: cover; height:0; width:100%; opacity:0;"></li>  
-        					<li id="3" class="slide 3" style="position:relative;  padding-top: 30.64%; display: none; background: url(<?php echo get_template_directory_uri() . '/dist/images/slide-3.png'; ?>) no-repeat center center;  background-size: cover; height:0; width:100%; opacity:0;"></li>  
-        					<li id="4" class="slide 4" style="position:relative;  padding-top: 30.64%; display: none; background: url(<?php echo get_template_directory_uri() . '/dist/images/slide-4.png'; ?>) no-repeat center center;  background-size: cover; height:0; width:100%; opacity:0;"></li>   
+       						<li id="1" class="slide 1" style="position:relative;  padding-top: 21.3%; display: block; background: url(<?php echo get_template_directory_uri() . '/dist/images/slide-1.png'; ?>) no-repeat center center;  background-size: cover; height:0; width:100%; opacity:1;"></li>  
+        					<li id="2" class="slide 2" style="position:relative;  padding-top: 21.3%; display: none; background: url(<?php echo get_template_directory_uri() . '/dist/images/slide-2.png'; ?>) no-repeat center center;  background-size: cover; height:0; width:100%; opacity:0;"></li>  
+        					<li id="3" class="slide 3" style="position:relative;  padding-top: 21.3%; display: none; background: url(<?php echo get_template_directory_uri() . '/dist/images/slide-3.png'; ?>) no-repeat center center;  background-size: cover; height:0; width:100%; opacity:0;"></li>  
+        					<li id="4" class="slide 4" style="position:relative;  padding-top: 21.3%; display: none; background: url(<?php echo get_template_directory_uri() . '/dist/images/slide-4.png'; ?>) no-repeat center center;  background-size: cover; height:0; width:100%; opacity:0;"></li>   
    					 	</ul> 
    					 	<div class="forward-but">
    					 		<i class="fa fa-chevron-right"></i>

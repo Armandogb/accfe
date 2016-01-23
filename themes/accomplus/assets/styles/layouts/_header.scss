@@ -1,9 +1,11 @@
 
 .contact-bar{
+	position: relative;
 	float: right;
 	background: #F5F5F1;
-	padding-top: 1%;
-	padding-bottom:1%;
+	padding-top: .5%;
+	padding-bottom:.5%;
+	z-index: 1;
 }
 
 .contact-bar li{
@@ -22,26 +24,26 @@
 }
 
 .logo-bar{
-	overflow: hidden;
 	background-color: white;
-	padding:.25% 25% 0 25%;
-	width:50%;
-	height:118px;
 }
 
 .logo{
+	position: relative;
 	 background: url(../images/logo.png) no-repeat center center; 
   	-webkit-background-size: cover;
  	 -moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-	height:100%;
-	min-width:656px;
-	width:100%;
+  	z-index: 2;
+  	bottom: 0;
+	height:0;
+	width:72%;
+	padding-top:13.7%;
+	margin-top: 1.65%;
 }
 
 .nav-bar{
-	 background-color: rgb(15, 148, 72);
+	 background-color: #0e9548;
 	 overflow: hidden;
 	 padding-top:0;
 }
@@ -57,20 +59,21 @@
 	display: inline-block;
 	float: right;
 	color: white;
-	padding:1% 0 0 0;
+	width:20%;
 }
 
 .search input{
 	background: transparent;
 	border: none;
-	height:30px;
+	padding-top:8%;
+	width:85%;
 	border-bottom:1px white solid;
 }
 
 .nav-bar li{
 	display: block;
 	float: left;
-	padding:2% 4% 2% 4%;
+	padding:2.5% 5% 2.5% 5%;
 	text-align: center;
 }
 
