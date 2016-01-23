@@ -34,7 +34,7 @@
 			<section class="services-sec main-pad">
 				<div class="big-service">
 					<div class="icon">
-						<div class="user-space"></div>
+						<div class="user"></div>
 					</div>
 					<h3>COMPLIANCE MANUAL</h3>
 					<p>ere e wr  erewrewr er erer erewrewrewrewr ewrer ewr</p>
@@ -42,7 +42,7 @@
 				</div>
 				<div class="big-service">
 					<div class="icon">
-						<div class="check-space"></div>
+						<div class="check"></div>
 					</div>
 					<h3>SMALL CU CENTER</h3>
 					<p>wrewr ererewre rere rewrerer e er ew rer ewr ewrewrew </p>
