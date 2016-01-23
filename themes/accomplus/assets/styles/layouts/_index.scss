@@ -98,8 +98,8 @@
 
 .services-sec{
 	background: #F5F5F1;
-	width: 64%;
-	padding:3% 18% 3% 18%;
+	padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .big-service{
@@ -110,7 +110,6 @@
 	width:21%;
 	padding:3.5% 5% 3.5% 5%;
 	margin-right: 2%;
-	height:200px;
 	color: #797c7d;
 	background: #F5F5F1;
 	text-align: center;
@@ -124,6 +123,7 @@
 }
 
 .big-service h3{
+	display: block;
     font-size: 24px;
     line-height: 1;
     color: #4d4f4f;
@@ -131,14 +131,53 @@
     font-weight: 300;
 }
 
+.icon i{
+	position: relative;
+	border:4px #797c7d solid;
+	width:30%;
+	padding:5%;
+	z-index: 3;
+}
+
+.user-space{
+	position: relative;
+	 background: url(../images/staff-icon.png) no-repeat center center; 
+  	-webkit-background-size: cover;
+ 	 -moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	z-index: 2;
+  	bottom: 0;
+	height:0;
+    width: 50%;
+    padding-top: 50%;
+    left:25%;
+}
+
+.check-space{
+	position: relative;
+	 background: url(../images/check-icon.png) no-repeat center center; 
+  	-webkit-background-size: cover;
+ 	 -moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	z-index: 2;
+  	bottom: 0;
+	height:0;
+    width: 50%;
+    padding-top: 50%;
+    left:25%;
+}
+
+
 .big-service .icon{
     background-color:#F5F5F1;
     color: #797c7d;
     position: absolute;
     color:red;
     width: 30%;
-    font-size: 50px;
-    top: -15%;
+    font-size: 28px;
+    top: -10%;
     left: 35%;
 }
 
@@ -169,8 +208,6 @@
     color: #797c7d;	
 }
 
-.small-service ul{
-}
 
 .small-service li{
 	padding-top: 1.5%;

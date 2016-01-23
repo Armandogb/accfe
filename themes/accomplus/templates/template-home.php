@@ -31,10 +31,10 @@
 				<div class="mission-menu">
 				</div>
 			</section>
-			<section class="services-sec">
+			<section class="services-sec main-pad">
 				<div class="big-service">
 					<div class="icon">
-						<i class="fa fa-book"></i>
+						<div class="user-space"></div>
 					</div>
 					<h3>COMPLIANCE MANUAL</h3>
 					<p>ere e wr  erewrewr er erer erewrewrewrewr ewrer ewr</p>
@@ -42,7 +42,7 @@
 				</div>
 				<div class="big-service">
 					<div class="icon">
-						<i class="fa fa-check"></i>
+						<div class="check-space"></div>
 					</div>
 					<h3>SMALL CU CENTER</h3>
 					<p>wrewr ererewre rere rewrerer e er ew rer ewr ewrewrew </p>

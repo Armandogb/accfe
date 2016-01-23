@@ -1,5 +1,9 @@
-
 @import "layouts/normalize.scss";
+
+@font-face {
+font-family: 'Myriad Pro Regular';
+src: url(../fonts/MYRIADPRO-REGULAR.OTF);
+}
 
 @import "layouts/global.scss";
 

@@ -2,7 +2,7 @@
 			<header>
 				<div class="contact-bar main-pad">
 					<ul>
-						<li><strong>800-942-7124</strong></li>
+						<li><strong>888-415-6145</strong></li>
 						<li>CONTACT US</li>
 						<li>LOG IN</li>
 					</ul>
