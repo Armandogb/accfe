@@ -24,26 +24,25 @@
 	-webkit-text-stroke: 1px #797c7d;
 	height:50px;
 	width:50px;
-	font-size: 50px;
+	font-size: 32px;
 	color: white;
 	z-index: 5;
+	top: 49%;
 }
 
 .back-but{
-    top: 47%;
-    left: 5%;
+    left: 18%;
 }
 
 .forward-but{
-    top: 47%;
-    right: 4%;
+    right: 16%;
 }
 
 
 .news-update{
 	background: #F5F5F1;
-	padding-top: 1%;
-	padding-bottom: 1%;
+    padding-top: 0.5%;
+    padding-bottom: .5%;
 }
 
 .news-update p{
