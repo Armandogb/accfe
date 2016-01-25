@@ -89,6 +89,7 @@
 
 .links {
 	width:100%;
+	margin-top: -2%;
 }
 
 
@@ -97,24 +98,46 @@
 }
 
 .email-box{
-	position: absolute;
+    position: absolute;
     text-align: center;
-    padding: 2% 10% 2% 10%;
+    left: 32%;
+    padding: 5% 13% 5% 13%;
     background: #fff;
-    margin-top: 2%;
+    margin-top: 1%;
     border: 2px solid #aed139;
     z-index: 5;
     opacity: 0;
     webkit-transition: all .5s;
     -o-transition: all .5s;
+    -webkit-transition: all .5s;
     transition: all .5s;
 
 }
 
-/*.up-shape {
-	width: 0;
-	height: 0;
-	border-left: 50px solid #aed139;
-	border-right: 50px solid #aed139;
-	border-bottom: 100px solid white;
-}*/
+.email-box a{
+    font-size: 18px;
+    font-family: 'Open Sans',sans-serif;
+    color: #797c7d;
+    border-bottom: 2px solid  #797c7d;   
+}
+
+.up-shape, .blocker-shape{
+    width: 0;
+    position: absolute;
+    height: 0;
+    left: 42%;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+
+.up-shape {	
+    top: -12.5%;
+    border-bottom: 11px solid #aed139;
+    z-index: 1;
+}
+
+.blocker-shape { 
+    top: -9.5%;
+    border-bottom: 11px solid white;
+    z-index: 2;
+}

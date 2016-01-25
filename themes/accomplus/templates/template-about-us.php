@@ -36,7 +36,7 @@
 							  	background-size: cover;
 								height:0;
 								width:100%;
-								padding-top: 120.2%;">
+								padding-top: 128.2%;">
 								</div>
 							</div>
 							<div class="leader-info">
@@ -49,7 +49,9 @@
 									<div class="email-box">
 										<div class="up-shape">	
 										</div>
-										<p>sample@email.com</p>
+										<div class="blocker-shape">	
+										</div>
+										<a href="/">sample@email.com</a>
 									</div>
 								</div>
 							</div>
