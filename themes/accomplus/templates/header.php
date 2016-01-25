@@ -2,7 +2,7 @@
 			<header>
 				<div class="contact-bar main-pad">
 					<ul>
-						<li><strong>888-415-6145</strong></li>
+						<li><strong><?php echo get_field("phone_number",57); ?></strong></li>
 						<li>CONTACT US</li>
 						<li>LOG IN</li>
 					</ul>
