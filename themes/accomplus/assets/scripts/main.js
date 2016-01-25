@@ -42,6 +42,20 @@
           };
 
         });
+
+          $(".page-nav a").on("click",function(e){
+              e.preventDefault();
+              var href = $(this).attr('href'); 
+            
+            $.ajax({
+              url:href,
+              type:'GET',
+              success: function(data){
+                $('.mission-blurb').empty();
+                $('.mission-blurb').html($(data).find('.mission-blurb').html());
+                 }
+              });
+          });
         
       }
     },
