@@ -47,6 +47,8 @@
 									<a class="leader-rm" href="/">READ MORE</a>
 									<a class="email-hov" href="/">CONTACT</a>
 									<div class="email-box">
+										<div class="up-shape">	
+										</div>
 										<p>sample@email.com</p>
 									</div>
 								</div>

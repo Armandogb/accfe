@@ -21,14 +21,12 @@
         // JavaScript to be fired on all pages
       },
       finalize: function() {
-        
-        alert('hey');
-
-/*        $(".email-hov").hover(function(){
+          
+        $(".email-hov").hover(function(){
           $(this).parent().find(".email-box").css("opacity",1);
         },function(){
            $(this).parent().find(".email-box").css("opacity",0);
-        });*/
+        });
         
         $(".leader-rm").on("click",function(e){
           e.preventDefault();
@@ -36,9 +34,11 @@
           if($(this).parent().find("p").hasClass("closed")){
             $(this).parent().find("p").removeClass("closed");
             $(this).parent().find("p").addClass("opened");
+            $(this).text("READ LESS");
           }else{
             $(this).parent().find("p").removeClass("opened");
             $(this).parent().find("p").addClass("closed");
+            $(this).text("READ MORE");
           };
 
         });
