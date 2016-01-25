@@ -28,7 +28,15 @@
 
 						<div class="leader-profile">
 							<div class="leader-image-con">
-								<div class="leader-image">
+								<div class="leader-image" style="
+								background: url(<?php echo $leader['leader_image']; ?>) no-repeat center center; 
+							  	-webkit-background-size: cover;
+							 	-moz-background-size: cover;
+							  	-o-background-size: cover;
+							  	background-size: cover;
+								height:0;
+								width:100%;
+								padding-top: 113.2%;">
 								</div>
 							</div>
 							<div class="leader-info">
