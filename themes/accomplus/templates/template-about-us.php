@@ -36,16 +36,19 @@
 							  	background-size: cover;
 								height:0;
 								width:100%;
-								padding-top: 113.2%;">
+								padding-top: 120.2%;">
 								</div>
 							</div>
 							<div class="leader-info">
 								<h3><?php echo $leader['leader_name']; ?></h3>
 								<h4><?php echo $leader['leader_title']; ?></h4>
-								<p><?php echo $leader['leader_bio']; ?></p>
 								<div class="links">
-									<a href="/">READ MORE</a>
-									<a href="/">CONTACT</a>
+									<p class="closed"><?php echo $leader['leader_bio']; ?></p>
+									<a class="leader-rm" href="/">READ MORE</a>
+									<a class="email-hov" href="/">CONTACT</a>
+									<div class="email-box">
+										<p>sample@email.com</p>
+									</div>
 								</div>
 							</div>
 						</div>

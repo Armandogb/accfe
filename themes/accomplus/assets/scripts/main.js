@@ -21,7 +21,27 @@
         // JavaScript to be fired on all pages
       },
       finalize: function() {
-      
+        
+        alert('hey');
+
+/*        $(".email-hov").hover(function(){
+          $(this).parent().find(".email-box").css("opacity",1);
+        },function(){
+           $(this).parent().find(".email-box").css("opacity",0);
+        });*/
+        
+        $(".leader-rm").on("click",function(e){
+          e.preventDefault();
+
+          if($(this).parent().find("p").hasClass("closed")){
+            $(this).parent().find("p").removeClass("closed");
+            $(this).parent().find("p").addClass("opened");
+          }else{
+            $(this).parent().find("p").removeClass("opened");
+            $(this).parent().find("p").addClass("closed");
+          };
+
+        });
         
       }
     },
@@ -91,7 +111,9 @@
     // About us page, note the change from about-us to about_us.
     'about_us': {
       init: function() {
-        // JavaScript to be fired on the about us page
+
+
+
       }
     }
   };
