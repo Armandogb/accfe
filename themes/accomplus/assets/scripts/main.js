@@ -21,8 +21,18 @@
         // JavaScript to be fired on all pages
       },
       finalize: function() {
+      
         
-        function findActive(slides){
+      }
+    },
+    // Home page
+    'home': {
+      init: function() {
+        // JavaScript to be fired on the home page
+      },
+      finalize: function() {  
+
+          function findActive(slides){
           var activeId = -1;
 
           for(var i = 0; i < slides.length; i++){
@@ -74,20 +84,7 @@
         setInterval(function () {
           slideChange(true);
           },4500);
-
-
-
-
-        
-      }
-    },
-    // Home page
-    'home': {
-      init: function() {
-        // JavaScript to be fired on the home page
-      },
-      finalize: function() {  
-
+ 
 
       }
     },

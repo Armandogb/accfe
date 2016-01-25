@@ -36,34 +36,33 @@
 					<div class="icon">
 						<div class="user"></div>
 					</div>
-					<h3>COMPLIANCE MANUAL</h3>
-					<p>ere e wr  erewrewr er erer erewrewrewrewr ewrer ewr</p>
+					<h3>OUR </br> STAFF</h3>
+					<p>Experienced, driven and ready to help however we can.</p>
 					<a href="/">STAY UP TO DATE</a>
 				</div>
 				<div class="big-service">
 					<div class="icon">
 						<div class="check"></div>
 					</div>
-					<h3>SMALL CU CENTER</h3>
-					<p>wrewr ererewre rere rewrerer e er ew rer ewr ewrewrew </p>
+					<h3>OUR SERVICES</h3>
+					<p>A better operating environment is around the corner.</p>
 					<a href="/">BROWSE</a>
 				</div>
-				<div class="small-service">
+				<div class="small-service quest">
 					<div class="icon">
-						<p>NEWSLETTER</p>
+						<h3>QUESTIONS?</h3>
 					</div>
-					<p>Get news when it breaks.</p>
-					<a href="/">SIGN UP</a>
+					<a href="/">CONTACT US</a>
 				</div>
 				<div class="small-service bot">
 					<div class="icon">
-						<p>CALENDAR</p>
+						<h3>CALENDAR</h3>
 					</div>
 					<ul>
-						<li>Event 1</li>
-						<li>Event 2</li>
-						<li>Event 3</li>
+						<li>Security update</li>
+						<li>IRS Form 5498</li>
 					</ul>
+					<a href="/">SEE ALL EVENTS</a>
 				</div>
 			</section>
 	

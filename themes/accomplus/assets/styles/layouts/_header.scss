@@ -74,17 +74,26 @@
 .nav-bar li{
 	display: block;
 	float: left;
-	font-family: 'Myriad Pro Regular';
 	padding:2.5% 5% 2.5% 5%;
 	text-align: center;
-}
-
-.nav-bar li:first-child{
-	background: #50b341;
+	webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
 }
 
 .nav-bar li a{
 	color:white;
+	font-family: 'Myriad Pro Regular',sans-serif;
+	font-weight: 300;
 	font-size: 15px;
-	line-height: 0;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.home .nav-bar li:first-child{
+	background-color: #50b341;
+}
+
+.current-menu-item,.nav-bar li:hover{
+	background: #097331 !important;
 }
