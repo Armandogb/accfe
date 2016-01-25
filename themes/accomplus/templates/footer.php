@@ -8,12 +8,12 @@
 						<li>1807 West Diehl Road</li>
 						<li>P.O. Box 3107</li>
 						<li>Naperville,IL 6056-7107</li>
-						<li>Phone: 630-983-3400</li>
-						<li>Email: info@accomplus.net</li>	
+						<li>Phone: 630-983-3400</li>	
 					</ul>
 				</div>
 				<div class="bot-nav">
 					<ul>
+						<li>Email: info@accomplus.net</li>
 						<li>|</li>
 						<li>About Us</li>	
 						<li>|</li>

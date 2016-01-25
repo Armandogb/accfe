@@ -18,102 +18,30 @@
 				</div>
 			</section>
 			<section class="management-collect main-pad">
-				<div class="leader-profile">
-					<div class="leader-image-con">
-						<div class="leader-image">
+
+					<?php
+
+						$repeat = get_field('leadership');
+
+						foreach($repeat as $leader):
+					?>
+
+						<div class="leader-profile">
+							<div class="leader-image-con">
+								<div class="leader-image">
+								</div>
+							</div>
+							<div class="leader-info">
+								<h3><?php echo $leader['leader_name']; ?></h3>
+								<h4><?php echo $leader['leader_title']; ?></h4>
+								<p><?php echo $leader['leader_bio']; ?></p>
+								<div class="links">
+									<a href="/">READ MORE</a>
+									<a href="/">CONTACT</a>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="leader-info">
-						<h3>Stephen R. Olson</h3>
-						<h4>EVP & General Counsel</h4>
-						<p>Steve serves as executive vice president, general counsel and chief operating officer of Accomplus and the Illinois Credit Union League. In this role, he coordinates all dues-supported activities and directs all 
-						corporate legal affairs for the affiliated companies comprising the ICU System...</p>
-						<div class="links">
-							<a href="/">READ MORE</a>
-							<a href="/">CONTACT</a>
-						</div>
-					</div>
-				</div>
-				<div class="leader-profile">
-					<div class="leader-image-con">
-						<div class="leader-image">
-						</div>
-					</div>
-					<div class="leader-info">
-						<h3>Stephen R. Olson</h3>
-						<h4>EVP & General Counsel</h4>
-						<p>Steve serves as executive vice president, general counsel and chief operating officer of Accomplus and the Illinois Credit Union League. In this role, he coordinates all dues-supported activities and directs all 
-						corporate legal affairs for the affiliated companies comprising the ICU System...</p>
-						<div class="links">
-							<a href="/">READ MORE</a>
-							<a href="/">CONTACT</a>
-						</div>
-					</div>
-				</div>
-				<div class="leader-profile">
-					<div class="leader-image-con">
-						<div class="leader-image">
-						</div>
-					</div>
-					<div class="leader-info">
-						<h3>Stephen R. Olson</h3>
-						<h4>EVP & General Counsel</h4>
-						<p>Steve serves as executive vice president, general counsel and chief operating officer of Accomplus and the Illinois Credit Union League. In this role, he coordinates all dues-supported activities and directs all 
-						corporate legal affairs for the affiliated companies comprising the ICU System...</p>
-						<div class="links">
-							<a href="/">READ MORE</a>
-							<a href="/">CONTACT</a>
-						</div>
-					</div>
-				</div>
-				<div class="leader-profile">
-					<div class="leader-image-con">
-						<div class="leader-image">
-						</div>
-					</div>
-					<div class="leader-info">
-						<h3>Stephen R. Olson</h3>
-						<h4>EVP & General Counsel</h4>
-						<p>Steve serves as executive vice president, general counsel and chief operating officer of Accomplus and the Illinois Credit Union League. In this role, he coordinates all dues-supported activities and directs all 
-						corporate legal affairs for the affiliated companies comprising the ICU System...</p>
-						<div class="links">
-							<a href="/">READ MORE</a>
-							<a href="/">CONTACT</a>
-						</div>
-					</div>
-				</div>
-				<div class="leader-profile">
-					<div class="leader-image-con">
-						<div class="leader-image">
-						</div>
-					</div>
-					<div class="leader-info">
-						<h3>Stephen R. Olson</h3>
-						<h4>EVP & General Counsel</h4>
-						<p>Steve serves as executive vice president, general counsel and chief operating officer of Accomplus and the Illinois Credit Union League. In this role, he coordinates all dues-supported activities and directs all 
-						corporate legal affairs for the affiliated companies comprising the ICU System...</p>
-						<div class="links">
-							<a href="/">READ MORE</a>
-							<a href="/">CONTACT</a>
-						</div>
-					</div>
-				</div>
-				<div class="leader-profile">
-					<div class="leader-image-con">
-						<div class="leader-image">
-						</div>
-					</div>
-					<div class="leader-info">
-						<h3>Stephen R. Olson</h3>
-						<h4>EVP & General Counsel</h4>
-						<p>Steve serves as executive vice president, general counsel and chief operating officer of Accomplus and the Illinois Credit Union League. In this role, he coordinates all dues-supported activities and directs all 
-						corporate legal affairs for the affiliated companies comprising the ICU System...</p>
-						<div class="links">
-							<a href="/">READ MORE</a>
-							<a href="/">CONTACT</a>
-						</div>
-					</div>
-				</div>
+					<?php endforeach; ?>
 			</section>
 
 
