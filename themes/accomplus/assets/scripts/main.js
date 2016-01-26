@@ -64,7 +64,10 @@
       init: function() {
         // JavaScript to be fired on the home page
       },
-      finalize: function() {  
+      finalize: function() {
+
+        var big_slide = $(".slide").toArray();
+        var small_slide = $(".s-slide").toArray();
 
           function findActive(slides){
           var activeId = -1;
@@ -78,9 +81,9 @@
           return activeId;
         }
         
-        function slideChange(option){
+        function slideChange(collect,option){
           
-          var slides = $(".slide").toArray();
+          var slides = collect;
           var activeSlide = findActive(slides);
 
           slides[activeSlide].style.opacity = 0;
@@ -108,16 +111,20 @@
 
 
         $(".forward-but").on("click",function(){
-          slideChange(true);
+          slideChange(big_slide,true);
         });
 
         $(".back-but").on("click",function(){
-          slideChange(false);
+          slideChange(big_slide,false);
         });
 
         setInterval(function () {
-          slideChange(true);
-          },4500);
+          slideChange(big_slide,true);
+          },7500);
+
+        setInterval(function () {
+          slideChange(small_slide,true);
+          },5000);
  
 
       }

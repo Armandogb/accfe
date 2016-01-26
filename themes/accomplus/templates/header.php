@@ -3,8 +3,8 @@
 				<div class="contact-bar main-pad">
 					<ul>
 						<li><strong><?php echo get_field("phone_number",57); ?></strong></li>
-						<li>CONTACT US</li>
-						<li>LOG IN</li>
+						<li class="t-links">CONTACT US</li>
+						<li class="t-links">LOG IN</li>
 					</ul>
 				</div>
 				<div class="logo-bar main-pad">

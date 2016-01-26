@@ -5,9 +5,33 @@
 	overflow: hidden;
 	position: relative;
 }
+
 .main-slider{
 	width:100%;
 }
+
+.ss-slide h3{
+	border-bottom: 1px solid #d6d7d8;
+    position: relative;
+    padding-bottom: 5%;
+    font-size: 20px;
+    font-family: Vollkorn,serif;
+    font-weight: 400;
+    color: #4d4f4f;
+    text-transform: uppercase;
+
+}
+
+.ss-slide p{
+    font-size: 15px;
+    line-height: 1.67;
+    color: #797c7d;
+    margin-bottom: 12px;
+    font-family: 'Open Sans';
+}
+
+.tracker{}
+
 
 .caro{
 	width:100%;
@@ -53,7 +77,7 @@
 }
 
 .mission-blurb{
-	width:70%;
+	width:65%;
 	display: inline-block;
 	float: left;
 }
@@ -76,11 +100,11 @@
 
 
 .mission-menu{
-	width: 25%;
-	float: right;
-	display: inline-block;
-	height:100%;
-	background: red;
+    width: 27%;
+    float: right;
+    display: inline-block;
+    text-align: center;
+    padding: 12% 1% 5% 1%;
 }
 
 .services-sec{
@@ -117,6 +141,7 @@
     color: #4d4f4f;
     font-family: 'Open Sans',sans-serif;
     font-weight: 300;
+    min-height: 48px;
 }
 
 .icon .check,.icon .user{
@@ -159,6 +184,7 @@
     font-size: 24px;
     line-height: 1;
     text-align: center;
+    z-index: 1;
 }
 
 .small-service{
@@ -177,7 +203,7 @@
 }
 
 .small-service.quest{
-	min-height: 75px;
+	min-height: 65px;
 }
 
 .small-service.quest .icon{
@@ -193,7 +219,7 @@
 }
 
 
-.services-sec a,.main-mission a{
+.services-sec a,.main-mission a,.ss-slide a{
 	color: #797c7d;
 	position: relative;
 	font-family: 'Vollkorn', serif;
@@ -204,9 +230,17 @@
 	border-bottom: 1px solid #aed139;	
 }
 
-.services-sec a{
-	bottom:0;
-	position: absolute;
+.small-service ul{
+	position: relative;
+	margin-top: 5%;
+    z-index: 2;
+}
+
+.small-service.quest a{
+    position: absolute;
+    bottom: 12%;
+    left: 33%;
+    z-index: 2;
 }
 
 .small-service.bot{

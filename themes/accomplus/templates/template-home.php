@@ -29,6 +29,52 @@
 					<p><?php echo get_field("blurb_content"); ?></p>
 				</div>
 				<div class="mission-menu">
+					<div>
+					    <ul>  
+       						<li id="1" class="s-slide 1" style="display:block;">
+       							<div class="ss-slide">
+       								<h3>TRAINING</h3>
+       								<p>BSA, financial skills, board workshops and more.</p>
+       								<a href="/">GET TRAINED</a>
+       								<div class="tracker">
+       									<div></div>
+       									<div></div>
+       									<div></div>
+       								</div>
+       							</div>
+       						</li>  
+        					<li id="2" class="s-slide 2" style="display:none;">
+        						<div class="ss-slide">
+       								<h3>CONSULTING</h3>
+       								<p>Need help with a Field of Membership expansion?</p>
+       								<a href="/">LEARN MORE</a>
+       								<div class="tracker">
+       									<div></div>
+       									<div></div>
+       									<div></div>
+       								</div>
+       							</div>
+       						</li>
+        					<li id="3" class="s-slide 3" style="display:none;">
+        					<div class="ss-slide">
+       								<h3>REVIEWS</h3>
+       								<p>Get a website or cybersecurity compliance review.</p>
+       								<a href="/">START HERE</a>
+       								<div class="tracker">
+       									<div></div>
+       									<div></div>
+       									<div></div>
+       								</div>
+       							</div>
+       						</li>      
+   					 	</ul> 
+<!--    					 	<div class="forward-but">
+   					 		<i class="fa fa-chevron-right"></i>
+   					 	</div>
+   					 	<div class="back-but">
+   					 		<i class="fa fa-chevron-left"></i>
+   					 	</div> -->
+					</div>
 				</div>
 			</section>
 			<section class="services-sec main-pad">
