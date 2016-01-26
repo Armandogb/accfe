@@ -22,6 +22,9 @@ section,header,footer{
 
 }
 
+input::-webkit-input-placeholder {
+color: white !important;
+}
 
 ul{
 	padding:0;
