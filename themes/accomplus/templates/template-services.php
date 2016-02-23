@@ -7,48 +7,32 @@
 
 			<section class="spread-banner main-pad">
 				<div class="banner blurb">
-					<h1>Mission Accomplused</h1>
-					<p>Can you feel it? A more efficient operating environment is nearby. Look around and you’ll find that we have what you need to get there.</p>	
+					<h1><?php echo get_field("banner_title"); ?></h1>
+					<p><?php echo get_field("banner_blurb"); ?></p>
 				</div>
 				<div class="banner-shape">	
 				</div>
 			</section>
 			<section class="page-text main-pad">
 				<div class="blurb con">				
-					<h1>Simplified Info. Collaborative Training.</h1>
-					<p>Can you feel it? A more efficient operating environment is nearby. Look around and you’ll find that we have what you need to get there.</p>
+					<h2><?php echo get_field("blurb_title"); ?></h2>
+					<p><?php echo get_field("blurb_content"); ?></p>
 				</div>
 			</section>
 			<section class="box-section">
-				<div class="link-box">
-					<h3>COMPLIANCE REVIEWS</h3>
-					<p>Ensure that your policies and procedures are where they should be.</p>
-					<a href="/">VIEW ALL</a>
-				</div>
-				<div class="link-box">
-					<h3>PLANNING</h3>
-					<p>We’ll work with you to define your current and future objectives.</p>
-					<a href="/">VIEW ALL</a>
-				</div>
-				<div class="link-box">
-					<h3>REGULATORY CONSULTING</h3>
-					<p>Need help with your next big thing? We’ll work with you directly.</p>
-					<a href="/">VIEW ALL</a>
-				</div>
-				<div class="link-box">
-					<h3>TRAINING</h3>
-					<p>Take care of your annual requirements here</p>
-					<a href="/">VIEW ALL</a>
-				</div>
-				<div class="link-box">
-					<h3>EMPLOYMENT</h3>
-					<p>Are your bases covered? Find out here.</p>
-					<a href="/">VIEW ALL</a>
-				</div>
-				<div class="link-box">
-					<h3>BACK OFFICE ASSISTANCE</h3>
-					<p>You don’t have to do it all. Accomplus can help.</p>
-					<a href="/">VIEW ALL</a>
-				</div>
+				<?php
+
+					$repeat = get_field('link_box');
+
+					foreach($repeat as $link):
+				?>
+
+					<div class="link-box">
+						<h3><?php echo $link['link_title']; ?></h3>
+						<p><?php echo $link['link_blurb']; ?></p>
+						<a href="<?php echo $link['link_url']; ?>">VIEW ALL</a>
+					</div>
+
+				<?php endforeach; ?>
 			</section>
 

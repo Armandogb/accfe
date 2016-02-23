@@ -27,6 +27,8 @@ foreach ($sage_includes as $file) {
 }
 unset($file, $filepath);
 
+show_admin_bar( false );
+
 function api_pages() {
 
   $labels = array(

@@ -8,7 +8,6 @@
 	border-bottom:10px solid #aed139;
 	width:100%;
 	padding-top:3%;
-	height:300px;
 	overflow: hidden;
 }
 
@@ -19,20 +18,11 @@
 	position: relative;
 }
 
-.leader-image{
-	background: url(../images/boss.jpg) no-repeat center center; 
-  	-webkit-background-size: cover;
- 	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-	height:100%;
-	width:100%;
-}
-
 .leader-info{
 	width:70%;
 	padding-left: 5%;
 	float: left;
+	padding-bottom: 2%;
 }
 
 .leader-info h3{
@@ -57,6 +47,10 @@
     line-height: 1.56;
     font-family: 'Open Sans',sans-serif;
     color: #797c7d;
+    overflow: hidden;
+    webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
 }
 
 .leader-info a{
@@ -70,6 +64,69 @@
 	border-bottom: 2px solid #aed139;	
 }
 
-.links{
-	padding-bottom:5%;
+.closed{
+	max-height: 80px;
+}
+
+.opened{
+	max-height: 1200px;
+}
+
+.email-hov{
+	position: relative;
+}
+
+.links {
+	width:100%;
+	margin-top: -2%;
+}
+
+
+.links a{
+	display: inline-block;
+}
+
+.email-box{
+    position: absolute;
+    text-align: center;
+    left: 32%;
+    padding: 5% 13% 5% 13%;
+    background: #fff;
+    margin-top: 1%;
+    border: 2px solid #aed139;
+    z-index: 5;
+    opacity: 0;
+    webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+
+}
+
+.email-box a{
+    font-size: 18px;
+    font-family: 'Open Sans',sans-serif;
+    color: #797c7d;
+    border-bottom: 2px solid  #797c7d;   
+}
+
+.up-shape, .blocker-shape{
+    width: 0;
+    position: absolute;
+    height: 0;
+    left: 42%;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+
+.up-shape {	
+    top: -12.5%;
+    border-bottom: 11px solid #aed139;
+    z-index: 1;
+}
+
+.blocker-shape { 
+    top: -9.5%;
+    border-bottom: 11px solid white;
+    z-index: 2;
 }

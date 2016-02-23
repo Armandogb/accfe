@@ -11,15 +11,23 @@ use Roots\Sage\Wrapper;
   <body <?php body_class(); ?> role="document">
       <section class="main-container">
         <?php
+          if( have_posts() ){
+            while(have_posts() ){
+              the_post();
+
           do_action('get_header');
           get_template_part('templates/header');
         ?>
+
               <?php include Wrapper\template_path(); ?>
            
         <?php
           do_action('get_footer');
           get_template_part('templates/footer');
           wp_footer();
+
+            }
+          }
         ?>
       </section>
   </body>

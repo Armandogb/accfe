@@ -2,12 +2,11 @@ footer{
 	background:#4D4F4F;
 	overflow: hidden;
 	color: #9EA2A4;
-	font-size: 14px;
+	padding:2% 0 2% 0;
+	font-size:15px;
+	line-height: 1.93;
 }
 
-footer li{
-	padding-top:1.5%;
-}
 
 footer i{
 	color: red;
@@ -20,8 +19,9 @@ footer div{
 
 footer span{
 	color: white;
-	font-size: 18px;
+	font-size: 17px;
 	position: relative;
+	display: inline-block;
 	left:-6%;
 }
 
@@ -32,53 +32,44 @@ footer span{
   	-o-background-size: cover;
   	background-size: cover;
 	position:absolute;
-	height:246px;
-	width:313px;
+	height:0;
+	width:18%;
+	padding-top: 25.6%;
 	z-index:1;
 	right:0;
-	top: 0; 
+	bottom: 0; 
 }
 
-
-.foot-nav-header{
+.map-icon{
 	display: inline-block;
-	width:100%;
-	clear:both;
+    background: url(../images/ico-location.png) no-repeat center center;
+    background-size: cover;
+    height: 0;
+    width: 6.5%;
+    right: 9%;
+    padding-top: 8.15%;
+    z-index: 1;
 }
 
-.foot-nav-header div{
-	float:right;
-	display: inline-block;
-	width:33%;
-	padding:0;
-}
-
-
-.footer-nav{
-	float:left;
-	width:33%;
-}
 .main-office{
+	position: relative;
+	display: inline-block;
 	float:left;
-	width:33%;
+	width:25%;
 }
-.spring-office{
-	float:left;
-	width:33%;
-}
+
 
 .bot-nav{
-	display: inline-block;
-	width:95%;
-	clear:both;
+    display: inline-block;
+    width:100%;
+    clear: both;
+    overflow: hidden;
+    float: left;
 }
 
 .bot-nav li{
-	float:right;
-	padding-left: 1%;
+	float:left;
+	padding-right: 1%;
 }
 
-.spring-office-head{
-	text-align: right;
-}
 

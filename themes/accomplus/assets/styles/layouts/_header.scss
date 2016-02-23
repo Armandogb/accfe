@@ -1,47 +1,55 @@
 
 .contact-bar{
+	position: relative;
 	float: right;
 	background: #F5F5F1;
-	padding-top: 1%;
-	padding-bottom:1%;
+	color: #4d4f4f;
+	padding-top: .5%;
+	padding-bottom:.5%;
+	z-index: 1;
 }
 
 .contact-bar li{
 	display: block;
 	line-height: 10px;
 	font-size: 12px;
-	padding:0 0 0 4%;
+	padding:.6% 0 0 4%;
 	float: right;
-	font-weight: 300;
+	font-weight: 400;
 
 }
 
 .contact-bar strong{
-	font-size: 24px;
+	font-size: 22px;
 
+}
+
+.t-links{
+	padding:1% 0 1% 4% !important;
+	font-size: 12px;
 }
 
 .logo-bar{
-	overflow: hidden;
 	background-color: white;
-	padding:.25% 25% 0 25%;
-	width:50%;
-	height:118px;
 }
 
 .logo{
+	position: relative;
 	 background: url(../images/logo.png) no-repeat center center; 
   	-webkit-background-size: cover;
  	 -moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-	height:100%;
-	min-width:656px;
-	width:100%;
+  	z-index: 2;
+  	bottom: 0;
+	height:0;
+	width:72%;
+	padding-top:13.7%;
+	margin-top: 1.65%;
 }
 
 .nav-bar{
-	 background-color: rgb(15, 148, 72);
+	 background-color: #0e9548;
 	 overflow: hidden;
 	 padding-top:0;
 }
@@ -57,29 +65,40 @@
 	display: inline-block;
 	float: right;
 	color: white;
-	padding:1% 0 0 0;
+	width:17%;
 }
 
 .search input{
 	background: transparent;
 	border: none;
-	height:30px;
+	padding-top:8%;
+	width:80%;
 	border-bottom:1px white solid;
 }
 
 .nav-bar li{
 	display: block;
 	float: left;
-	padding:2% 4% 2% 4%;
+	padding:2.5% 5% 2.5% 5%;
 	text-align: center;
-}
-
-.nav-bar li:first-child{
-	background: #50b341;
+	webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
 }
 
 .nav-bar li a{
 	color:white;
+	font-family: 'Myriad Pro Regular',sans-serif;
+	font-weight: 300;
 	font-size: 15px;
-	line-height: 0;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.home .nav-bar li:first-child{
+	background-color: #50b341;
+}
+
+.current-menu-item,.nav-bar li:hover{
+	background: #097331 !important;
 }

@@ -2,10 +2,36 @@
 .main-mission{
 	background: white; 
 	padding-bottom:4%;
+	overflow: hidden;
+	position: relative;
 }
+
 .main-slider{
 	width:100%;
 }
+
+.ss-slide h3{
+	border-bottom: 1px solid #d6d7d8;
+    position: relative;
+    padding-bottom: 5%;
+    font-size: 20px;
+    font-family: Vollkorn,serif;
+    font-weight: 400;
+    color: #4d4f4f;
+    text-transform: uppercase;
+
+}
+
+.ss-slide p{
+    font-size: 15px;
+    line-height: 1.67;
+    color: #797c7d;
+    margin-bottom: 12px;
+    font-family: 'Open Sans';
+}
+
+.tracker{}
+
 
 .caro{
 	width:100%;
@@ -15,24 +41,8 @@
 .caro ul{
 	width:100%;
 	position: relative;
-	height:100%;
 	overflow: hidden;
 	z-index: 4;
-}
-
-.caro li{
-	display: inline-block;  
-    overflow: hidden;  
-    width: 100%;    
-    float: left;  
-    -moz-box-sizing: border-box;  
-    -webkit-box-sizing: border-box;  
-    box-sizing: border-box;
-    height:400px;
-    transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out; 
-
 }
 
 .forward-but,.back-but{
@@ -40,26 +50,25 @@
 	-webkit-text-stroke: 1px #797c7d;
 	height:50px;
 	width:50px;
-	font-size: 50px;
+	font-size: 32px;
 	color: white;
 	z-index: 5;
+	top: 49%;
 }
 
 .back-but{
-    top: 47%;
-    left: 5%;
+    left: 10%;
 }
 
 .forward-but{
-    top: 47%;
-    right: 4%;
+    right: 8%;
 }
 
 
 .news-update{
 	background: #F5F5F1;
-	padding-top: 1%;
-	padding-bottom: 1%;
+    padding-top: 0.5%;
+    padding-bottom: .5%;
 }
 
 .news-update p{
@@ -68,7 +77,7 @@
 }
 
 .mission-blurb{
-	width:70%;
+	width:65%;
 	display: inline-block;
 	float: left;
 }
@@ -91,17 +100,17 @@
 
 
 .mission-menu{
-	width: 25%;
-	float: right;
-	display: inline-block;
-	height:100%;
-	background: red;
+    width: 27%;
+    float: right;
+    display: inline-block;
+    text-align: center;
+    padding: 12% 1% 5% 1%;
 }
 
 .services-sec{
 	background: #F5F5F1;
-	width: 64%;
-	padding:3% 18% 3% 18%;
+	padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .big-service{
@@ -109,10 +118,10 @@
 	position: relative;
 	display: inline-block;
 	border:1px #797c7d solid;
-	width:21%;
-	padding:3.5% 5% 3.5% 5%;
+    width: 25%;
+    height: 200px;
+    padding: 2.5% 3% 3.5% 3%;
 	margin-right: 2%;
-	height:200px;
 	color: #797c7d;
 	background: #F5F5F1;
 	text-align: center;
@@ -125,13 +134,38 @@
 
 }
 
-.big-service h3{
+.big-service h3,.small-service h3{
+	display: block;
     font-size: 24px;
     line-height: 1;
     color: #4d4f4f;
     font-family: 'Open Sans',sans-serif;
     font-weight: 300;
+    min-height: 48px;
 }
+
+.icon .check,.icon .user{
+	position: relative;
+	z-index: 2;
+  	bottom: 0;
+	height:0;
+    width: 60%;
+    padding-top: 60%;
+    left:20%;
+    -webkit-background-size: cover;
+ 	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.user{
+	 background: url(../images/staff-icon.png) no-repeat center center; 
+}
+
+.check{
+	 background: url(../images/check-icon.png) no-repeat center center; 
+}
+
 
 .big-service .icon{
     background-color:#F5F5F1;
@@ -139,20 +173,18 @@
     position: absolute;
     color:red;
     width: 30%;
-    font-size: 50px;
-    top: -15%;
+    font-size: 28px;
+    top: -9%;
     left: 35%;
 }
 
 .small-service .icon{
     background-color: #F5F5F1;
     position: absolute;
-    width: 50%;
-    font-size: 16px;
-    line-height: 0px;
-    top: -14%;
-    left: 25%;
+    font-size: 24px;
+    line-height: 1;
     text-align: center;
+    z-index: 1;
 }
 
 .small-service{
@@ -161,7 +193,6 @@
     display: inline-block;
     border: 1px #797c7d solid;
     width: 33%;
-    height: 103px;
     padding-top: 2%;
     background: #F5F5F1;
     text-align: center;
@@ -171,28 +202,59 @@
     color: #797c7d;	
 }
 
-.small-service ul{
+.small-service.quest{
+	min-height: 65px;
 }
+
+.small-service.quest .icon{
+	min-height: 75px;
+	width: 60%;
+	top: -35%;
+    left: 20%;
+}
+
 
 .small-service li{
 	padding-top: 1.5%;
 }
 
 
-.services-sec a,.main-mission a{
+.services-sec a,.main-mission a,.ss-slide a{
 	color: #797c7d;
+	position: relative;
 	font-family: 'Vollkorn', serif;
+	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 1; 
 	padding-bottom: 1%;
-	border-bottom: 2px solid #aed139;	
+	border-bottom: 1px solid #aed139;	
+}
+
+.small-service ul{
+	position: relative;
+	margin-top: 5%;
+    z-index: 2;
+}
+
+.small-service.quest a{
+    position: absolute;
+    bottom: 12%;
+    left: 33%;
+    z-index: 2;
 }
 
 .small-service.bot{
-	margin-top: 2%;
+    height: 115px;
+    bottom: -32px;
+
+}
+
+.quest a{
+	margin-top: 5%;
 }
 
 .small-service.bot .icon{
-	width: 45%;
-    left: 27.5%;
+    width: 60%;
+    top: -25%;
+    left: 20%;
 }

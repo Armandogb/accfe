@@ -21,8 +21,55 @@
         // JavaScript to be fired on all pages
       },
       finalize: function() {
+          
+        $(".email-hov").hover(function(){
+          $(this).parent().find(".email-box").css("opacity",1);
+        },function(){
+           $(this).parent().find(".email-box").css("opacity",0);
+        });
         
-        function findActive(slides){
+        $(".leader-rm").on("click",function(e){
+          e.preventDefault();
+
+          if($(this).parent().find("p").hasClass("closed")){
+            $(this).parent().find("p").removeClass("closed");
+            $(this).parent().find("p").addClass("opened");
+            $(this).text("READ LESS");
+          }else{
+            $(this).parent().find("p").removeClass("opened");
+            $(this).parent().find("p").addClass("closed");
+            $(this).text("READ MORE");
+          };
+
+        });
+
+          $(".page-nav a").on("click",function(e){
+              e.preventDefault();
+              var href = $(this).attr('href'); 
+            
+            $.ajax({
+              url:href,
+              type:'GET',
+              success: function(data){
+                $('.mission-blurb').empty();
+                $('.mission-blurb').html($(data).find('.mission-blurb').html());
+                 }
+              });
+          });
+        
+      }
+    },
+    // Home page
+    'home': {
+      init: function() {
+        // JavaScript to be fired on the home page
+      },
+      finalize: function() {
+
+        var big_slide = $(".slide").toArray();
+        var small_slide = $(".s-slide").toArray();
+
+          function findActive(slides){
           var activeId = -1;
 
           for(var i = 0; i < slides.length; i++){
@@ -34,9 +81,9 @@
           return activeId;
         }
         
-        function slideChange(option){
+        function slideChange(collect,option){
           
-          var slides = $(".slide").toArray();
+          var slides = collect;
           var activeSlide = findActive(slides);
 
           slides[activeSlide].style.opacity = 0;
@@ -64,37 +111,30 @@
 
 
         $(".forward-but").on("click",function(){
-          slideChange(true);
+          slideChange(big_slide,true);
         });
 
         $(".back-but").on("click",function(){
-          slideChange(false);
+          slideChange(big_slide,false);
         });
 
         setInterval(function () {
-          slideChange(true);
-          },4500);
+          slideChange(big_slide,true);
+          },7500);
 
-
-
-
-        
-      }
-    },
-    // Home page
-    'home': {
-      init: function() {
-        // JavaScript to be fired on the home page
-      },
-      finalize: function() {  
-
+        setInterval(function () {
+          slideChange(small_slide,true);
+          },5000);
+ 
 
       }
     },
     // About us page, note the change from about-us to about_us.
     'about_us': {
       init: function() {
-        // JavaScript to be fired on the about us page
+
+
+
       }
     }
   };
